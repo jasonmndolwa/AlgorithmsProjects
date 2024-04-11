@@ -1,5 +1,6 @@
-
 #include <iostream>
+#include <iomanip>
+#include <stack>
 
 typedef char elemType; // "placeholder" for data type
 
@@ -24,7 +25,7 @@ private:
     void display(TreeNode*, int) const;
 
 public:
-    binaryTree() { root = nullptr; };
+    binaryTree() { root = NULL; };
     int treeNodeCount() const { return size(root); };
     int height() const;
     void display() const;
@@ -56,4 +57,3 @@ public:
     void insertItem(const elemType&);
     void balanceFactors() const;
 };
-
